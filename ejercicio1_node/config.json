@@ -1,0 +1,5 @@
+{
+  "intervalSeconds": 5,
+  "show": ["cpu", "mem", "sysUptime", "nodeUptime"]
+}
+
