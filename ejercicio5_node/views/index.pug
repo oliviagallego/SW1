@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  p App Express de ejemplo (Ejercicio 5)
+
+  h2 Lista (servida desde el servidor)
+  ul
+    each word in items
+      li= word
+
+  if images && images.length
+    h2 Imágenes (pasadas desde el servidor)
+    .grid
+      each img in images
+        figure.card
+          img(src=img.url, alt=img.alt, width="240", height="160")
+          figcaption= img.alt
+
+  hr
+  a.button(href="/login") Iniciar sesión

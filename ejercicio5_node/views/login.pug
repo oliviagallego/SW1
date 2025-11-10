@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  if message
+    p(style="padding:.4rem .6rem;background:#f2f8ff;border:1px solid #cfe2ff;border-radius:.4rem")= message
+
+  form(method="POST" action="/login" style="max-width:360px")
+    div
+      label(for="username") Usuario
+      input#username(type="text", name="username", required, placeholder="olivia")
+    div
+      label(for="password") Contraseña
+      input#password(type="password", name="password", required, placeholder="••••••")
+    button(type="submit" style="margin-top:.6rem") Entrar
+
+  p
+    a(href="/") ← Volver al inicio
