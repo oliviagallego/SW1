@@ -1,0 +1,16 @@
+{
+  "name": "ejercicio4_node",
+  "version": "1.0.0",
+  "description": "- Extraer datos de páginas web\r - De forma automática haciendo uso de bots\r - Una vez extraída la información se procesa\r - Se repite el proceso a lo largo del tiempo para comparar la evolución de los datos\r - Ejemplos:\r     - Google extrayendo información de las webs para el buscador\r     - Internet Archive para conservar webs antiguas\r     - Páginas de comparación de precios\r - Crea un servidor\r     - Inicializa package.json\r     - Que descargue periódicamente el HTML de una web\r     - Que lo procese para extraer una información específica\r     - Opcional: usa algún paquete como cheerio para manipular el DOM\r - Cuidado\r     - Algunas webs requieren JS para visualizarse\r     - No hagas muchas peticiones en poco tiempo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.1.2"
+  }
+}
